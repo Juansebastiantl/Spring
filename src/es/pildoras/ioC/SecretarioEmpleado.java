@@ -6,6 +6,7 @@ public class SecretarioEmpleado implements Empleados {
 	private CreacionInformes informeNuevo;
 	
 	// Creacion de construccion que inyecta la dependencia
+	// Recordar que el le insertamos informe en el archivo XML
 	public SecretarioEmpleado(CreacionInformes informeNuevo) {
 		
 		this.informeNuevo = informeNuevo;
@@ -20,7 +21,7 @@ public class SecretarioEmpleado implements Empleados {
 	@Override
 	public String getInforme() {
 		// TODO Auto-generated method stub
-		return "Informe creado por el Director " +informeNuevo.getInforme();
+		return "Informe creado por el Secretario " +informeNuevo.getInforme();
 	}
 	
 
