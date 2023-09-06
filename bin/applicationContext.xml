@@ -14,12 +14,16 @@
 <bean id = "miInforme" class = "es.pildoras.ioC.Informe">
 </bean>
 
-<bean id = "miEmpleado" class="es.pildoras.ioC.JefeEmpleado">
+<bean id = "miEmpleado" class="es.pildoras.ioC.SecretarioEmpleado">
 <constructor-arg ref ="miInforme"></constructor-arg>
+<property name = "email" value = "Secretario@gmail.com" ></property>
+<property name = "nombreEmpresa" value = "Pildoras informaticas" ></property>
 </bean>
 
 <bean id = "miDirectorEmpleado" class = "es.pildoras.ioC.DirectorEmpleado">
 <property name = "informeNuevo" ref = "miInforme" ></property>
+<property name = "email" value = "Director@gmail.com" ></property>
+<property name = "nombreEmpresa" value = "Pildoras informaticas" ></property>
 </bean>
 
 
