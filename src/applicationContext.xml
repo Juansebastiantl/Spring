@@ -13,7 +13,7 @@
 
 <bean id = "miInforme" class = "es.pildoras.ioC.Informe">
 </bean>
-<bean id = "miEmpleado" class="es.pildoras.ioC.SecretarioEmpleado">
+<bean id = "miEmpleado" class="es.pildoras.ioC.JefeEmpleado">
 <constructor-arg ref ="miInforme"></constructor-arg>
 </bean>
 
